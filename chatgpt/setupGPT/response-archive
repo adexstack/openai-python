@@ -1,0 +1,39 @@
+java code to recursively list all files ending with .txt in a directory
+Sure! Here's a Java code that uses recursion to list all files ending with ".txt" in a directory:
+
+```java
+import java.io.*;
+
+public class FileLister {
+    public static void main(String[] args) {
+        // Specify the directory path
+        String directoryPath = "C:/path/to/directory";
+
+        // Start listing files
+        listFiles(directoryPath);
+    }
+
+    public static void listFiles(String directoryPath) {
+        File directory = new File(directoryPath);
+
+        // Get all files in the directory
+        File[] files = directory.listFiles();
+
+        // Iterate over each file
+        for (File file : files) {
+            if (file.isDirectory()) {
+                // Recursively call the listFiles method for sub-directories
+                listFiles(file.getAbsolutePath());
+            } else {
+                // Check if the file ends with ".txt"
+                if (file.getName().endsWith(".txt")) {
+                    // Print the file path
+                    System.out.println(file.getAbsolutePath());
+                }
+            }
+        }
+    }
+}
+```
+
+Make sure to replace `"C:/path/to/directory"` with the path to the directory you want to search in.

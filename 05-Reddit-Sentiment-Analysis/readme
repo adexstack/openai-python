@@ -1,0 +1,17 @@
+Todo: refactor my self created sentiment_analysis.py to use OOP (currently all implemented in one .py file)
+Todo: add credit card to openai to avoid "openai.error.RateLimitError" error
+
+Reddit API:
+Go to https://www.reddit.com/prefs/apps
+Click "create application"
+Name: My Sentiment Example
+Choose script
+Leave description and about url blank
+Add http://www.example.com/unused/redirect/uri to redirect uri
+
+There should be similar openai response after running the script if all goes OK:
+Sentiment:
+Company: Pfizer
+Sentiment: Negative
+------------------------------
+Title: Fed’s Bowman says more U.S. rate hikes likely will be needed

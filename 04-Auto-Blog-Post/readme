@@ -1,0 +1,10 @@
+This automatically creates blog post html in content dir and create a png image in:
+ /Users/bola/PycharmProjects/adexstack.github.io
+e.g <a href="content/1.html"> 1 </a>
+and cover_image.png
+
+and pushes the dir to github repo:
+https://github.com/adexstack/adexstack.github.io/tree/main
+
+see the html on repo rendered on the web by invoking https://adexstack.github.io/index.html
+cover_image.png to see the image creted by Dallee API
