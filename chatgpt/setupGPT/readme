@@ -4,3 +4,5 @@ Todo : send response from chatgpt to a file so you don't have to generate past g
 Solved limit failure issue by upgrading my api account to paid (topped up with Tesco card)
 .env in C:\Users\seyade02\PycharmProjects\openai-api-python\chatgpt\.env must exist with content:
 OPENAI_API_KEY="put-your-chatgpt-api-key-here"
+
+https://platform.openai.com/usage  (to see usage)
