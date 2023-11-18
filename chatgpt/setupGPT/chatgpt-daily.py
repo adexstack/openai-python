@@ -1,4 +1,3 @@
-# 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
 import os
 import openai
 from dotenv import load_dotenv
